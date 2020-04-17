@@ -55,6 +55,7 @@ def create_linear_regression(df, country_name):
     res.to_csv('.\Results\\' + country_name + 'Results.csv')
     create_lin_reg_plot(X, y, X_test, y_pred, country_name, str(len(df)), regressor.intercept_, regressor.coef_, 'lin')
 
+##Code edits that I just made
 def create_exp_regression(df, country_name):
     print(country_name)
     X = df['Day_Count'].values.reshape(-1, 1)
